@@ -1,0 +1,21 @@
+﻿<Window x:Class="Bluetooth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bluetooth"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox Name="PickDevice" HorizontalAlignment="Left" Height="22" Margin="29,184,0,0" VerticalAlignment="Top" Width="256" SelectionChanged="PickDevice_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,163,0,0" TextWrapping="Wrap" Text="Wybierz urządzenie" VerticalAlignment="Top"/>
+        <Button Name="Scan" Content="Skanuj w poszukiwaniu urządzeń" HorizontalAlignment="Left" Margin="29,124,0,0" VerticalAlignment="Top" Width="256" Click="Scan_Click" Height="24"/>
+        <ComboBox Name="RadiosCombo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="256" Margin="29,57,0,0" SelectionChanged="Radios_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="29,31,0,0" TextWrapping="Wrap" Text="Wybierz adapter" VerticalAlignment="Top" Width="120"/>
+        <Button Name="PairingButton" Content="Paruj" HorizontalAlignment="Left" Height="27" Margin="29,221,0,0" VerticalAlignment="Top" Width="256" Click="PairingButton_Click"/>
+        <Button Name="ConnectButton" Content="Połącz się" HorizontalAlignment="Left" Height="27" Margin="29,269,0,0" VerticalAlignment="Top" Width="256" Click="ConnectButton_Click"/>
+        <Button Content="Wyślij dane" HorizontalAlignment="Left" Height="20" Margin="29,315,0,0" VerticalAlignment="Top" Width="256" Click="Send_Button"/>
+        <Button Name="BrowseFile" Content="Wybierz plik" HorizontalAlignment="Left" Height="21" Margin="29,357,0,0" VerticalAlignment="Top" Width="256" Click="BrowseFile_Click"/>
+
+    </Grid>
+</Window>
